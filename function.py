@@ -38,7 +38,7 @@ def test():
                 for map_name in Actual_ops_files:
                     map_list = map_name.split(" ")
                     if client_reference == map_list[0] in map_name:
-                        UPLOAD = r'I:\OPS\VPR\Actual Ops Files' + str("/" + map_name)
+                        UPLOAD = r'yourPath' + str("/" + map_name)
                         app.config['UPLOAD'] = UPLOAD
                         filename = secure_filename(file.filename)
                         file.save(os.path.join(app.config['UPLOAD'], filename))
